@@ -9,7 +9,7 @@ namespace AlunosApi.Models
 
         [Required]
         [StringLength(80)]
-        public string Name { get; set; }
+        public string Nome { get; set; }
 
         [Required]
         [EmailAddress]
