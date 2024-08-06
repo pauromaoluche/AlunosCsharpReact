@@ -40,7 +40,7 @@ namespace AlunosApi.Migrations
                     b.Property<int>("Idade")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("character varying(80)");

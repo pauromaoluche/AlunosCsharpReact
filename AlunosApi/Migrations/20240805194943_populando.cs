@@ -14,7 +14,7 @@ namespace AlunosApi.Migrations
         {
             migrationBuilder.InsertData(
                 table: "Alunos",
-                columns: new[] { "Id", "Email", "Idade", "Name" },
+                columns: new[] { "Id", "Email", "Idade", "Nome" },
                 values: new object[,]
                 {
                     { 1, "user1@hotmail.com", 23, "User 1" },

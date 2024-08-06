@@ -17,7 +17,7 @@ namespace AlunosApi.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Name = table.Column<string>(type: "character varying(80)", maxLength: 80, nullable: false),
+                    Nome = table.Column<string>(type: "character varying(80)", maxLength: 80, nullable: false),
                     Email = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
                     Idade = table.Column<int>(type: "integer", nullable: false)
                 },

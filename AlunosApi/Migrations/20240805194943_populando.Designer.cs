@@ -40,7 +40,7 @@ namespace AlunosApi.Migrations
                     b.Property<int>("Idade")
                         .HasColumnType("integer");
 
-                    b.Property<string>("Name")
+                    b.Property<string>("Nome")
                         .IsRequired()
                         .HasMaxLength(80)
                         .HasColumnType("character varying(80)");
@@ -55,14 +55,14 @@ namespace AlunosApi.Migrations
                             Id = 1,
                             Email = "user1@hotmail.com",
                             Idade = 23,
-                            Name = "User 1"
+                            Nome = "User 1"
                         },
                         new
                         {
                             Id = 2,
                             Email = "user2@hotmail.com",
                             Idade = 23,
-                            Name = "User 2"
+                            Nome = "User 2"
                         });
                 });
 #pragma warning restore 612, 618
