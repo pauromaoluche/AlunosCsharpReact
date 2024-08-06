@@ -17,14 +17,14 @@ namespace AlunosApi.Context
                 new Aluno
                 {
                     Id = 1,
-                    Name = "User 1",
+                    Nome = "User 1",
                     Email = "user1@hotmail.com",
                     Idade = 23
                 },
                     new Aluno
                     {
                         Id = 2,
-                        Name = "User 2",
+                        Nome = "User 2",
                         Email = "user2@hotmail.com",
                         Idade = 23
                     }

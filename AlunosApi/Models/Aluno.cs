@@ -18,5 +18,11 @@ namespace AlunosApi.Models
 
         [Required]
         public int Idade { get; set; }
+
+        internal int Count()
+        {
+            throw new NotImplementedException();
+        }
+
     }
 }
