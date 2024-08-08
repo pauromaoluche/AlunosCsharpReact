@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using AlunosApi.Models;
 using AlunosApi.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AlunosApi.Controllers
@@ -11,16 +13,19 @@ namespace AlunosApi.Controllers
     [ApiController]
     [Route("api/[controller]")]
     //[Produces("application/json")]
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class AlunosController : ControllerBase
     {
-        private IAlunoService _alunoService;
+        private readonly AlunosService _alunoService;
 
-        public AlunosController(IAlunoService alunoService)
+        public AlunosController(AlunosService alunoService)
         {
             _alunoService = alunoService;
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<IAsyncEnumerable<Aluno>>> GetAlunos()
         {
             try
