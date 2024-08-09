@@ -1,6 +1,6 @@
 import React from "react";
+import Login from "./pages/Login";
+import "./Global.css";
 export default function App() {
-  return <h1>Pauluci</h1>;
+  return <Login />;
 }
-
-
