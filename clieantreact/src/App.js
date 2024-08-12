@@ -1,6 +1,9 @@
-import React from "react";
-import Login from "./pages/Login";
-import "./Global.css";
+import React from 'react';
+import Rotas from './routes';
+import './Global.css';
+
 export default function App() {
-  return <Login />;
+  return (
+    <Rotas/>
+  );
 }
